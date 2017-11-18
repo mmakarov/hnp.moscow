@@ -1,0 +1,237 @@
+<!DOCTYPE HTML>
+<!--
+	Ex Machina by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Юридическая фирма «Хромченков и партнеры»</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700italic,700,400,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+		<script>
+			$(document).ready(function(){
+				var maxLength = 70;
+				$("#textBox").keyup(function() {
+				var length = $(this).val().length;
+				length = maxLength-length;
+				$("#chars").text('Осталось ' + length + ' знаков');
+				});
+			});
+		</script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+	</head>
+	<body class="homepage">
+
+	<!-- Header -->
+		<div id="header">
+			<div class="container">
+					
+				<!-- Logo -->
+					<div id="logo">
+						<h1><a href="/">Хромченков и партнеры</a></h1>
+						<p id="slogan">Понятно. Четко. Конкретно. Ясно.</p>
+					</div>
+				
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li class="active"><a href="index.html">Главная</a></li>
+							<li><a href="home.html">Жилье</a></li>
+							<li><a href="land.html">Земля</a></li>
+							<li><a href="family.html">Семья и наследство</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
+						</ul>
+					</nav>
+
+			</div>
+		</div>
+	<!-- Header -->
+	<!-- Banner -->
+		<div id="banner" style="position:relative; background:url(css/images/fotolia_81071920.jpg) no-repeat center; padding: 12em 0em; background-size: cover;">
+			<div class="container">
+				</div>
+				</div>
+	<!-- /Banner -->
+	<!-- Main -->
+		<div id="page">
+			<!-- Main -->
+			<div id="main" class="container">
+				<div class="row">
+					<div class="8u">
+						<section>
+							<header>
+								<h2>У НАС ВСЕ СЕРЬЕЗНО</h2>
+								<span class="byline">Добро пожаловать на сайт Юридической фирмы «Хромченков и партнеры»!</span>
+							</header>
+							<p>В условиях современной реальности, в обстановке сложной экономической действительности, с учетом ограниченности материальных возможностей населения и субъектов хозяйственной деятельности, очень сложно обеспечить эффективное, и в то же самое время, доступное представительство своих интересов в судах и государственных органах в процессе защиты принадлежащего гражданам и предпринимателям права. В этой связи, позвольте кратко далее изложить свое личное мнение по данному вопросу.</p>
+							<p>Ни для кого не секрет, что рынок юридических услуг в Москве, Московской области, да и всей России, пожалуй, значительно перенасыщен. На нем представлено огромное количество больших и малых юридических фирм, индивидуальных предпринимателей, адвокатских образований, независимых юристов, так называемых «фрилансеров».</p>
+							<p>В этой связи, для потребителя юридических услуг становится затруднительным избрать в качестве своего представителя достойного квалифицированного и главное, что уж там говорить, порядочного юриста или адвоката. Очень удачно для потребителя складывается ситуация, когда есть возможность посоветоваться с родственниками, знакомыми или друзьями, получить от них рекомендацию и обратиться в соответствии с ней к проверенному специалисту в этой области.</p>
+							<a href="more.html" class="button">Читать дальше →</a>
+						</section>
+					</div>
+					<div class="4u">
+						<section class="sidebar">
+							<header>
+								<h2>ОПЕРАТИВНАЯ СВЯЗЬ</h2>
+							</header>
+							<div class="widget-content">
+								
+								<script>
+									var requestObj = false;
+									if (window.XMLHttpRequest) {
+										requestObj = new XMLHttpRequest();
+									} else if (window.ActiveXObject) {
+										requestObj = new ActiveXObject("Microsoft.XMLHTTP");
+									}
+									
+									function get(id) {
+										console.log("Get request running...");
+										if (requestObj) {
+											requestObj.open("GET", "https://zfu6bjz2zc.execute-api.eu-west-1.amazonaws.com/test?text=" + document.getElementsByTagName("textarea")[0].value);
+											requestObj.onreadystatechange = function () {
+												if (requestObj.readyState == 4 && requestObj.status == 200) {
+													console.log("Got positive response...");                            
+													//document.getElementById("send").disabled = true;
+													alert("Спасибо, мы Вам перезвоним!");		
+													
+													var currentdate = new Date(); 
+													var datetime = currentdate.getDate() + "."
+																	+ (currentdate.getMonth()+1)  + "." 
+																	+ currentdate.getFullYear() + " в "  
+																	+ currentdate.getHours() + ":"  
+																	+ currentdate.getMinutes() + ":" 
+																	+ currentdate.getSeconds();							
+													var div = document.getElementById("history");
+													div.innerHTML = div.innerHTML + '<p>'+ datetime + ' - ' + document.getElementById("textBox").value + '</p>';
+													document.getElementById("textBox").value = "";
+													$("#chars").text("Осталось 70 знаков");                      
+												} else {
+													console.log("Got negative response...");
+												}
+											}
+											requestObj.send(null);
+										}
+										console.log("Response: " + requestObj.responseText);
+									}
+									
+								</script>
+								<form lpformnum="1">
+									  <label for="textBox">Текст Вашего сообщения:</label>
+									<textarea autofocus maxlength="70" rows="5" placeholder="Напишите пожалуйста здесь Ваш вопрос и номер телефона для связи." id="textBox" style="width: 100%;"></textarea><br>
+									<div id="history">
+									</div>
+									<a href="#" class="button" id="send" onclick="get('response');">Перезвоните мне</a>
+									&nbsp;<span id="chars">Осталось 70 знаков</span>
+									<!--<input type="button" id="send" value="Перезвоните мне" onclick="get('response');">-->
+								</form>
+								
+								
+							</div>
+						</section>
+						<section class="sidebar">
+							<!--<header>
+								<h2>НАШИ ПАРТНЕРЫ</h2>
+							</header>
+							<ul class="style2">
+								<li>
+									<img src="" alt=""></a>
+									<p><a href="#" target="_blank"></a></p>
+								</li>
+							</ul>
+							-->
+					</div>
+				</div>
+			</div>
+			<!-- Main -->
+			
+			<!-- Extra here -->
+				
+		</div>
+	<!-- /Main -->
+	<!-- Footer -->
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="4u" hidden>
+						<section>
+							<h2>Отзывы клиентов</h2>
+							<div class="balloon">
+								&nbsp;
+							</div>
+							<div class="ballon-bgbtm">&nbsp;</div>
+						</section>
+					</div>
+					<div class="4u">
+						<section>
+							<h2>Наши принципы</h2>
+							<ul class="default">
+								<li>
+									<h3>Доверие в основе всего</h3>
+									<p>Мы смотрим на Ваши задачи в комплексе. Стремимся стать надежным партнером на всю жизнь. Многие наши клиенты становятся Друзьями. Пока другие обещают, мы просто берем и делаем.</p>
+								</li>
+								<li>
+									<h3>Работаем быстро</h3>
+									<p>Перезваниваем сразу. Изучаем материалы по мере поступления. Не опаздываем в суд и подаем все документы вовремя, даже если завтра - Новый год.</p>
+								</li>
+								<li>
+									<h3>Делаем все сами</h3>
+									<p>Мы не поручаем Ваши задачи посредникам. Работа выполняется самостоятельно, от начала и до конца. У нас принято лично отвечать за результат.</p>
+								</li>
+							</ul>
+						</section>
+					</div>
+					<div class="4u">
+						<section>
+							<h2>Контактная информация</h2>
+							<p>Общество с ограниченной ответственностью <strong>Юридическая фирма «Хромченков и партнеры»</strong></p>
+							<table style="width:100%">
+							<tr>
+								<td width="25%">Телефон</td>
+								<td>8 (495) 115-36-18</td>
+							</tr>
+							<tr>
+								<td>Email</td>
+								<td>HromchenkovOleg@gmail.com</td>
+							</tr>
+							<tr>
+								<td>Офис</td>
+								<td>г. Москва, м. Белорусская, 4-й Лесной переулок, дом 4, офисный центр "White stone"</td>
+							</tr>
+							<tr>
+								<td>Офис</td>
+								<td>г. Москва, м. Митино, Пятницкое шоссе, дом 21</td>
+							</tr>
+							</table>
+							<p>Мы работаем как в будние дни, так и в выходные, поэтому не стесняйтесь, звоните нам!</p>
+							<a href="contacts.html" class="button">Контакты</a>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- /Footer -->
+
+	<!-- Copyright -->
+		<div id="copyright" class="container">
+			© 2014-2017, ООО «Юридическая фирма «Хромченков и партнеры», официальный сайт.<br />
+			Материалы сайта предоставлены исключительно для целей информирования и не являются публичной офертой.<br />			
+			Дизайн: <a href="http://templated.co">TEMPLATED</a> Изображения: <a href="http://www.fotolia.com">Fotolia</a>
+		</div>
+<!-- Yandex.Metrika counter --><script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter30157369 = new Ya.Metrika({ id:30157369, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="https://mc.yandex.ru/watch/30157369" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+
+	</body>
+</html>
